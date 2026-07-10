@@ -1,6 +1,6 @@
 # siyu-ingen-edge-ai
 
-Edge AI & Model Compression Internship — InGen Dynamics (Futurenauts Program)
+Edge AI & Model Compression Internship — InGen Dynamics
 
 Compressing deep learning models with quantization, pruning, and knowledge
 distillation so they can run on resource-constrained edge devices, benchmarked
@@ -8,7 +8,7 @@ against per-platform deployment targets (model size and inference latency).
 
 **Intern:** Siyu Xiang · Georgia Institute of Technology (Computer Engineering)
 **Supervisor:** Iqbal Patel · InGen Dynamics
-**Program:** 4-week remote internship (shifted schedule, July 6 start)
+**Program:** 4-week remote internship
 
 ---
 
@@ -34,21 +34,26 @@ with `timeit` at batch size = 1.
 
 ## Model & dataset
 
-**Model:** MobileNetV3-Small (`torchvision.models.mobilenet_v3_small`)
-**Dataset:** CIFAR-10 (`torchvision.datasets.CIFAR10`)
+**Model:** MobileNetV3-Small (`torchvision.models.mobilenet_v3_small`, ImageNet-pretrained)
+**Dataset:** CIFAR-10 (via HuggingFace `datasets`: `load_dataset('uoft-cs/cifar10')`)
 
 Selection rationale:
 
 - **Small enough for CPU** — MobileNetV3-Small is designed for edge/mobile
-  hardware (~2.5M parameters), so it runs without a GPU and leaves clear room to
-  study how far compression can push size and latency.
-- **Public, easy-to-evaluate dataset** — CIFAR-10 is small, downloads via
-  torchvision, and trains on CPU, making it a reliable testbed for measuring
-  accuracy before vs. after compression.
-- **Directly loadable in PyTorch** — both the model and dataset come from
-  torchvision, no external checkpoints required.
+  hardware (2,542,856 parameters, ≈113 M FLOPs per inference), so it runs
+  without a GPU and leaves clear room to study how far compression can push
+  size and latency.
+- **Public, easy-to-evaluate dataset** — CIFAR-10 is small, loads via
+  HuggingFace `datasets`, and evaluates on CPU, making it a reliable testbed
+  for measuring accuracy before vs. after compression.
+- **Directly loadable in PyTorch** — pretrained model from torchvision, dataset
+  via HuggingFace; no external checkpoints required.
 - **Maps to a real use case** — image classification on a lightweight model
-  mirrors the on-device perception task on platforms like the InGen Rover.
+  mirrors the on-device perception task on platforms like Aido Rover.
+
+Baseline profile (FP32): **10.31 MB** weight file · **40.46 ms** CPU latency
+(bs=1, mean of 100 runs, Apple M-series CPU).
+Details: `notebooks/W01_Baseline_Notebook.ipynb`.
 
 ---
 
@@ -58,8 +63,9 @@ Selection rationale:
 siyu-ingen-edge-ai/
 ├── notebooks/      # experiment notebooks (baseline, quantization, pruning, distillation, NAS)
 ├── experiments/    # precomputed compression-sweep results (CSV)
-├── reports/        # compression memo (W02) and playbook (W03)
+├── reports/        # landscape briefing (W01), compression memo (W02), playbook (W03)
 ├── weekly/         # weekly Edge logs (Wk-01-EdgeLog.md, ...)
+├── capstone/       # capstone report, deck, retrospective (Week 4)
 ├── requirements.txt
 └── README.md
 ```
