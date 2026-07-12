@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "params": 1528106,
+  "best_test_acc": 0.9338,
+  "smoke_test": false
+}
