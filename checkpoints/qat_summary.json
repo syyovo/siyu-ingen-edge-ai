@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "epochs": 1,
+  "best_int8_test_acc": 0.116,
+  "smoke_test": true
+}

@@ -1,7 +1,9 @@
 venv/
 data/
-*.pth
-.ipynb_checkpoints/
+logs/
+checkpoints/*
+!checkpoints/qat_summary.json
 __pycache__/
-.vscode/
+.ipynb_checkpoints/
 .DS_Store
+!checkpoints/qat_summary.json
