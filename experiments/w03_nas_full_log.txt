@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+gen 0: best fit=0.2930 acc=0.2930 size=0.325MB chrom=[5, 5, 4, 0, 2] (0.2 min)
+gen 1: best fit=0.2930 acc=0.2930 size=0.325MB chrom=[5, 5, 4, 0, 2] (0.2 min)
+gen 2: best fit=0.2930 acc=0.2930 size=0.325MB chrom=[5, 5, 4, 0, 2] (0.2 min)
+gen 3: best fit=0.2930 acc=0.2930 size=0.325MB chrom=[5, 5, 4, 0, 2] (0.2 min)
+gen 4: best fit=0.3010 acc=0.3010 size=0.418MB chrom=[5, 5, 4, 2, 2] (0.1 min)
+gen 5: best fit=0.3010 acc=0.3010 size=0.418MB chrom=[5, 5, 4, 2, 2] (0.1 min)
+gen 6: best fit=0.3010 acc=0.3010 size=0.418MB chrom=[5, 5, 4, 2, 2] (0.1 min)
+gen 7: best fit=0.3010 acc=0.3010 size=0.418MB chrom=[5, 5, 4, 2, 2] (0.1 min)
+gen 8: best fit=0.3010 acc=0.3010 size=0.418MB chrom=[5, 5, 4, 2, 2] (0.1 min)
+gen 9: best fit=0.3010 acc=0.3010 size=0.418MB chrom=[5, 5, 4, 2, 2] (0.1 min)
+gen 10: best fit=0.3010 acc=0.3010 size=0.418MB chrom=[5, 5, 4, 2, 2] (0.1 min)
+gen 11: best fit=0.3270 acc=0.3270 size=0.465MB chrom=[5, 5, 4, 3, 2] (0.2 min)
+gen 12: best fit=0.3270 acc=0.3270 size=0.465MB chrom=[5, 5, 4, 3, 2] (0.1 min)
+gen 13: best fit=0.3270 acc=0.3270 size=0.465MB chrom=[5, 5, 4, 3, 2] (0.1 min)
+gen 14: best fit=0.3270 acc=0.3270 size=0.465MB chrom=[5, 5, 4, 3, 2] (0.0 min)
+GA finished. Best cached architectures are in the CSV.
