@@ -1,4 +1,4 @@
 config,test_acc,size_MB,latency_ms,latency_std_ms,acc_drop_pp,size_ratio,speedup
-FP32 baseline,0.9338,6.24,38.52,1.99,0.0,1.0,1.0
-INT8 PTQ per-channel,0.1591,1.83,3.42,0.15,77.47,3.41,11.26
-INT8 PTQ per-tensor,0.1,1.65,3.36,0.1,83.38,3.78,11.46
+FP32 baseline,0.9338,6.24,37.33,0.67,0.0,1.0,1.0
+INT8 PTQ per-channel,0.1591,1.83,3.34,0.16,77.47,3.41,11.18
+INT8 PTQ per-tensor,0.1,1.65,3.36,0.14,83.38,3.78,11.11

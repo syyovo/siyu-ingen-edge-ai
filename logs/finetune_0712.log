@@ -1,0 +1,74 @@
+Loading CIFAR-10 from HuggingFace cache...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Model ready | params after head swap: 1,528,106
+Phase 1: head-only training, 2 epoch(s), lr=1e-3
+[phase1] epoch 1/2 batch 50/782 loss 1.1009
+[phase1] epoch 1/2 batch 100/782 loss 0.6957
+[phase1] epoch 1/2 batch 150/782 loss 0.6813
+[phase1] epoch 1/2 batch 200/782 loss 0.6248
+[phase1] epoch 1/2 batch 250/782 loss 0.5761
+[phase1] epoch 1/2 batch 300/782 loss 0.6128
+[phase1] epoch 1/2 batch 350/782 loss 0.5818
+[phase1] epoch 1/2 batch 400/782 loss 0.5581
+[phase1] epoch 1/2 batch 450/782 loss 0.5843
+[phase1] epoch 1/2 batch 500/782 loss 0.5558
+[phase1] epoch 1/2 batch 550/782 loss 0.5517
+[phase1] epoch 1/2 batch 600/782 loss 0.5544
+[phase1] epoch 1/2 batch 650/782 loss 0.5355
+[phase1] epoch 1/2 batch 700/782 loss 0.5289
+[phase1] epoch 1/2 batch 750/782 loss 0.5483
+[phase1] epoch 1/2 done in 24.7 min | test acc 0.8216
+[phase1] new best acc 0.8216 -> saved baseline_best.pth
+[phase1] epoch 2/2 batch 50/782 loss 0.4836
+[phase1] epoch 2/2 batch 100/782 loss 0.4986
+[phase1] epoch 2/2 batch 150/782 loss 0.5002
+[phase1] epoch 2/2 batch 200/782 loss 0.4562
+[phase1] epoch 2/2 batch 250/782 loss 0.5440
+[phase1] epoch 2/2 batch 300/782 loss 0.4842
+[phase1] epoch 2/2 batch 350/782 loss 0.4693
+[phase1] epoch 2/2 batch 400/782 loss 0.4925
+[phase1] epoch 2/2 batch 450/782 loss 0.4721
+[phase1] epoch 2/2 batch 500/782 loss 0.4686
+[phase1] epoch 2/2 batch 550/782 loss 0.4734
+[phase1] epoch 2/2 batch 600/782 loss 0.4537
+[phase1] epoch 2/2 batch 650/782 loss 0.5081
+[phase1] epoch 2/2 batch 700/782 loss 0.4596
+[phase1] epoch 2/2 batch 750/782 loss 0.4899
+[phase1] epoch 2/2 done in 19.8 min | test acc 0.8332
+[phase1] new best acc 0.8332 -> saved baseline_best.pth
+Phase 2: full fine-tune, 2 epoch(s), lr=1e-4
+[phase2] epoch 1/2 batch 50/782 loss 0.3736
+[phase2] epoch 1/2 batch 100/782 loss 0.2953
+[phase2] epoch 1/2 batch 150/782 loss 0.2860
+[phase2] epoch 1/2 batch 200/782 loss 0.2907
+[phase2] epoch 1/2 batch 250/782 loss 0.2526
+[phase2] epoch 1/2 batch 300/782 loss 0.2675
+[phase2] epoch 1/2 batch 350/782 loss 0.2387
+[phase2] epoch 1/2 batch 400/782 loss 0.2389
+[phase2] epoch 1/2 batch 450/782 loss 0.2076
+[phase2] epoch 1/2 batch 500/782 loss 0.2493
+[phase2] epoch 1/2 batch 550/782 loss 0.2357
+[phase2] epoch 1/2 batch 600/782 loss 0.2230
+[phase2] epoch 1/2 batch 650/782 loss 0.2193
+[phase2] epoch 1/2 batch 700/782 loss 0.2163
+[phase2] epoch 1/2 batch 750/782 loss 0.2131
+[phase2] epoch 1/2 done in 72.8 min | test acc 0.9270
+[phase2] new best acc 0.9270 -> saved baseline_best.pth
+[phase2] epoch 2/2 batch 50/782 loss 0.1634
+[phase2] epoch 2/2 batch 100/782 loss 0.1549
+[phase2] epoch 2/2 batch 150/782 loss 0.1518
+[phase2] epoch 2/2 batch 200/782 loss 0.1664
+[phase2] epoch 2/2 batch 250/782 loss 0.1588
+[phase2] epoch 2/2 batch 300/782 loss 0.1557
+[phase2] epoch 2/2 batch 350/782 loss 0.1575
+[phase2] epoch 2/2 batch 400/782 loss 0.1416
+[phase2] epoch 2/2 batch 450/782 loss 0.1524
+[phase2] epoch 2/2 batch 500/782 loss 0.1784
+[phase2] epoch 2/2 batch 550/782 loss 0.1425
+[phase2] epoch 2/2 batch 600/782 loss 0.1469
+[phase2] epoch 2/2 batch 650/782 loss 0.1639
+[phase2] epoch 2/2 batch 700/782 loss 0.1384
+[phase2] epoch 2/2 batch 750/782 loss 0.1555
+[phase2] epoch 2/2 done in 69.6 min | test acc 0.9338
+[phase2] new best acc 0.9338 -> saved baseline_best.pth
+DONE. Best test accuracy: 0.9338 (this is the Week 2 baseline accuracy)

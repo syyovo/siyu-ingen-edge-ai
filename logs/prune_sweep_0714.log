@@ -1,0 +1,48 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{'config': 'baseline', 'ratio': 0.0, 'params': 1528106, 'test_acc': 0.9338, 'size_MB': 6.24, 'latency_ms': 40.1, 'latency_std_ms': 6.0}
+[sweep] ratio 0.1: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 0.4632
+    ft epoch 2/3 mean loss 0.2900
+    ft epoch 3/3 mean loss 0.2244
+[sweep] {'config': 'prune 10% + 3ep ft', 'ratio': 0.1, 'params': 1240101, 'test_acc': 0.895, 'size_MB': 5.08, 'latency_ms': 34.2, 'latency_std_ms': 2.26} | 58.1 min
+[sweep] ratio 0.2: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 1.1683
+    ft epoch 2/3 mean loss 0.7598
+    ft epoch 3/3 mean loss 0.6239
+[sweep] {'config': 'prune 20% + 3ep ft', 'ratio': 0.2, 'params': 986506, 'test_acc': 0.7811, 'size_MB': 4.06, 'latency_ms': 40.31, 'latency_std_ms': 1.98} | 64.9 min
+[sweep] ratio 0.3: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 1.5021
+    ft epoch 2/3 mean loss 1.0857
+    ft epoch 3/3 mean loss 0.9220
+[sweep] {'config': 'prune 30% + 3ep ft', 'ratio': 0.3, 'params': 762585, 'test_acc': 0.6804, 'size_MB': 3.16, 'latency_ms': 35.86, 'latency_std_ms': 1.95} | 57.1 min
+[sweep] ratio 0.4: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 1.7327
+    ft epoch 2/3 mean loss 1.3620
+    ft epoch 3/3 mean loss 1.1825
+[sweep] {'config': 'prune 40% + 3ep ft', 'ratio': 0.4, 'params': 566775, 'test_acc': 0.566, 'size_MB': 2.37, 'latency_ms': 30.94, 'latency_std_ms': 1.87} | 49.5 min
+[sweep] ratio 0.5: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 1.7683
+    ft epoch 2/3 mean loss 1.4205
+    ft epoch 3/3 mean loss 1.2593
+[sweep] {'config': 'prune 50% + 3ep ft', 'ratio': 0.5, 'params': 403354, 'test_acc': 0.5491, 'size_MB': 1.72, 'latency_ms': 33.71, 'latency_std_ms': 8.18} | 55.8 min
+[sweep] ratio 0.6: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 1.8542
+    ft epoch 2/3 mean loss 1.5897
+    ft epoch 3/3 mean loss 1.4508
+[sweep] {'config': 'prune 60% + 3ep ft', 'ratio': 0.6, 'params': 262541, 'test_acc': 0.4488, 'size_MB': 1.15, 'latency_ms': 21.69, 'latency_std_ms': 1.59} | 41.5 min
+[sweep] ratio 0.7: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 1.9533
+    ft epoch 2/3 mean loss 1.6575
+    ft epoch 3/3 mean loss 1.5309
+[sweep] {'config': 'prune 70% + 3ep ft', 'ratio': 0.7, 'params': 153434, 'test_acc': 0.4654, 'size_MB': 0.71, 'latency_ms': 16.6, 'latency_std_ms': 1.12} | 42.3 min
+[sweep] ratio 0.8: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 2.0268
+    ft epoch 2/3 mean loss 1.7716
+    ft epoch 3/3 mean loss 1.6321
+[sweep] {'config': 'prune 80% + 3ep ft', 'ratio': 0.8, 'params': 73045, 'test_acc': 0.4086, 'size_MB': 0.38, 'latency_ms': 11.26, 'latency_std_ms': 0.67} | 20.6 min
+[sweep] ratio 0.9: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 2.1711
+    ft epoch 2/3 mean loss 1.9787
+    ft epoch 3/3 mean loss 1.8578
+[sweep] {'config': 'prune 90% + 3ep ft', 'ratio': 0.9, 'params': 21948, 'test_acc': 0.3371, 'size_MB': 0.17, 'latency_ms': 7.14, 'latency_std_ms': 1.16} | 11.8 min
+DONE. Results in experiments/W02_pruning_sweep_ft3.csv

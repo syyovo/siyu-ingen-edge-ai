@@ -1,0 +1,17 @@
+[precheck] nominal 12%: 4.87 MB | 1,186,341 params | clears 5 MB: True
+[precheck] nominal 13%: 4.76 MB | 1,159,742 params | clears 5 MB: True
+[precheck] nominal 14%: 4.65 MB | 1,133,885 params | clears 5 MB: True
+[precheck] nominal 15%: 4.56 MB | 1,109,583 params | clears 5 MB: True
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{'config': 'baseline', 'ratio': 0.0, 'params': 1528106, 'test_acc': 0.9338, 'size_MB': 6.24, 'latency_ms': 50.61, 'latency_std_ms': 6.34}
+[sweep] ratio 0.12: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 0.5271
+    ft epoch 2/3 mean loss 0.3291
+    ft epoch 3/3 mean loss 0.2536
+[sweep] {'config': 'prune 12% + 3ep ft', 'ratio': 0.12, 'params': 1186341, 'test_acc': 0.8845, 'size_MB': 4.87, 'latency_ms': 46.62, 'latency_std_ms': 5.65} | 74.3 min
+[sweep] ratio 0.15: pruning + 3ep finetune...
+    ft epoch 1/3 mean loss 0.7590
+    ft epoch 2/3 mean loss 0.4845
+    ft epoch 3/3 mean loss 0.3763
+[sweep] {'config': 'prune 15% + 3ep ft', 'ratio': 0.15, 'params': 1109583, 'test_acc': 0.8532, 'size_MB': 4.56, 'latency_ms': 43.53, 'latency_std_ms': 1.74} | 76.6 min
+DONE. Results in experiments/W04_rover_verification.csv

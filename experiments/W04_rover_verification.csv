@@ -1,0 +1,4 @@
+config,ratio,params,test_acc,size_MB,latency_ms,latency_std_ms
+baseline,0.0,1528106,0.9338,6.24,50.61,6.34
+prune 12% + 3ep ft,0.12,1186341,0.8845,4.87,46.62,5.65
+prune 15% + 3ep ft,0.15,1109583,0.8532,4.56,43.53,1.74
